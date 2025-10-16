@@ -1,0 +1,20 @@
+:root{
+  --sd-white:#ffffff;
+  --sd-soft:#f8f9fb;
+  --sd-orange:#fb8500;
+  --sd-amber:#ffb703;
+  --sd-navy:#0b1220;
+  --sd-slate:#1a2633;
+  --sd-text:#0b1220;
+  --sd-body:#3a3a3a;
+  --sd-border:#e7ebf0;
+  --sd-muted:#4c5768;
+  --sd-radius:16px;
+  --sd-hero-grad:linear-gradient(to bottom, rgba(11,18,32,0.55), rgba(11,18,32,0.8));
+  --sd-cta-grad:linear-gradient(135deg,#ff8a00 0%,#ffb847 100%);
+  --sd-section-pad-min:48px;
+  --sd-section-pad-max:96px;
+  --sd-section-pad:clamp(var(--sd-section-pad-min),10vw,var(--sd-section-pad-max));
+  --sd-band-pad:clamp(40px,9vw,84px);
+  --sd-hero-min:64vh;
+}

@@ -1,0 +1,1 @@
+<?php get_header(); ?><section class='sd-section'><div class='container'><h1><?php bloginfo('name'); ?></h1><p>Create a page titled Home to use the homepage template.</p></div></section><?php get_footer(); ?>

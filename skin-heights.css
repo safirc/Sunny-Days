@@ -1,0 +1,42 @@
+/* Sunny Days – rhythm and height tokens */
+:root{
+  --sd-embed-h:360px;
+  --sd-feed-h:520px;
+}
+
+/* Global rhythm refinements */
+.sd-section{
+  padding-block:var(--sd-section-pad)!important;
+}
+.sd-section.band,
+.sd-section.soft{
+  padding-block:var(--sd-band-pad)!important;
+}
+
+/* Hero layout */
+.hero{
+  min-height:var(--sd-hero-min);
+  display:grid;
+  align-items:center;
+  position:relative;
+}
+.hero .container{
+  position:relative;
+  z-index:1;
+}
+.hero .cta{
+  gap:16px;
+}
+
+/* Social feed box sizing */
+.section-social .feed{
+  block-size:var(--sd-feed-h);
+  overflow:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.section-social .feed > iframe,
+.section-social .feed > div{
+  display:block;
+  inline-size:100%;
+  block-size:100%;
+}
