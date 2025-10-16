@@ -108,15 +108,16 @@ function t4sd_enqueue_assets() {
     ['wp-block-library','t4sd-style'],
     $theme_ver
   );
-	// Height/spacing overrides (loads AFTER theme.css)
-$heights_css = get_template_directory() . '/assets/css/skin-heights.css';
-$heights_ver = file_exists($heights_css) ? filemtime($heights_css) : ( defined('T4SD_VERSION') ? T4SD_VERSION : time() );
-wp_enqueue_style(
-  't4sd-heights',
-  get_template_directory_uri() . '/assets/css/skin-heights.css',
-  ['t4sd-theme'],
-  $heights_ver
-);
+
+  // Height/spacing overrides (loads AFTER theme.css)
+  $heights_css = get_template_directory() . '/assets/css/skin-heights.css';
+  $heights_ver = file_exists($heights_css) ? filemtime($heights_css) : ( defined('T4SD_VERSION') ? T4SD_VERSION : time() );
+  wp_enqueue_style(
+    't4sd-heights',
+    get_template_directory_uri() . '/assets/css/skin-heights.css',
+    ['t4sd-theme'],
+    $heights_ver
+  );
   // Final inline overrides (prints after skin-heights.css)
   $pad   = absint( get_theme_mod('t4sd_style_section_pad', 64) );
   $band  = absint( get_theme_mod('t4sd_style_band_pad', 48) );
@@ -133,7 +134,8 @@ wp_enqueue_style(
              . "--sd-body-size: {$body}px;"
              . "}";
   wp_add_inline_style('t4sd-heights', $sd_inline);
-// Theme JS
+
+  // Theme JS
   wp_enqueue_script('t4sd-theme', get_template_directory_uri() . '/assets/js/theme.js', [], $script_ver, true);
 
   // (Optional) Emit a tiny comment so you can verify versions in View Source
