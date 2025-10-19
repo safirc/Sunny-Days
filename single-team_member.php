@@ -2,8 +2,8 @@
 <section class="sd-section">
   <div class="container">
     <article class="single">
-      <div style="display:grid;grid-template-columns:260px 1fr;gap:24px">
-        <div><?php if (has_post_thumbnail()) the_post_thumbnail('large'); ?></div>
+      <div class="team-member-layout">
+        <div class="team-member-layout__media"><?php if (has_post_thumbnail()) the_post_thumbnail('large'); ?></div>
         <div>
           <h1><?php the_title(); ?></h1>
           <?php if ($pos): ?><div class="meta"><?php echo esc_html($pos); ?></div><?php endif; ?>

@@ -77,6 +77,8 @@ a:hover{text-decoration:underline}
 .site-footer a{color:rgba(255,255,255,0.85)}
 .site-footer a:hover,.site-footer a:focus{color:var(--sd-amber)}
 .footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:28px}
+@media (max-width:960px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}
+@media (max-width:560px){.footer-grid{grid-template-columns:1fr;gap:20px}}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.12);margin-top:24px;padding-top:18px;color:#a7b6c7}
 .partner-logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px;justify-items:center;align-items:center;margin-top:32px}
 .partner-logo{display:flex;align-items:center;justify-content:center;padding:18px 24px;background:var(--sd-white);border:1px solid var(--sd-border);border-radius:18px;min-height:120px;transition:transform .2s ease, box-shadow .2s ease;box-shadow:0 8px 20px rgba(11,18,32,0.05)}
@@ -86,13 +88,20 @@ a:hover{text-decoration:underline}
 .partner-logo__name{font-weight:600;color:var(--sd-muted);text-align:center}
 .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 @media (max-width:980px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.team-grid{grid-template-columns:1fr}}
 .member{background:var(--sd-card);border:1px solid var(--sd-border);border-radius:18px;overflow:hidden}
 .member .pad{padding:16px}
 .member .pos{color:var(--sd-muted);font-size:14px}
 .newsletter{text-align:center}
-.newsletter .input{border-radius:20px;border:1px solid var(--sd-border);background:rgba(255,255,255,0.9);color:var(--sd-text);height:56px;padding:18px 22px;width:100%;min-width:320px;box-shadow:0 10px 24px rgba(11,18,32,0.12)}
+.newsletter .input{border-radius:20px;border:1px solid var(--sd-border);background:rgba(255,255,255,0.9);color:var(--sd-text);height:56px;padding:18px 22px;width:100%;min-width:0;max-width:100%;box-shadow:0 10px 24px rgba(11,18,32,0.12)}
 @media (max-width:680px){.newsletter .input{max-width:100%}}
-.newsletter .btn{padding:14px 22px;border-radius:22px;box-shadow:0 12px 24px rgba(251,133,0,0.25)}
-@media (max-width:520px){.newsletter .btn{width:100%}}
+.newsletter .btn{padding:14px 22px;border-radius:22px;box-shadow:0 12px 24px rgba(251,133,0,0.25)} 
+@media (max-width:520px){.newsletter .btn{width:100%}} 
+.team-member-layout{display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:start}
+.team-member-layout__media img{width:100%;height:auto;border-radius:20px}
+@media (max-width:720px){
+  .team-member-layout{grid-template-columns:1fr}
+  .team-member-layout__media{max-width:320px;margin-inline:auto}
+}
 
 body{font-size:var(--sd-body-size)}
