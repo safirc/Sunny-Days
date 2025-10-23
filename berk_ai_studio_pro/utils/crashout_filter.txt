@@ -1,0 +1,1 @@
+drawbox=x=40:y=H-80:w=300:h=24:color=white@0.15:t=fill, drawbox=x=40:y=H-80:w='min(300, (t/3.0)*300)':h=24:color=red@0.8:t=fill
