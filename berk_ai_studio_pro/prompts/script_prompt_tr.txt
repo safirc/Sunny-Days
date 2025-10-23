@@ -1,0 +1,13 @@
+Türk bir aile evinde geçen 30 saniyelik komedi skeci yaz.
+Karakterler: Berk (9, dramatik), Tunç (17, sarkastik), Melis (14, influencer), Anne Sevim.
+Yapı: Hook → Conflict → Crashout → Punchline.
+Ton: hızlı, abartılı, aile içi kaos.
+
+JSON olarak ver:
+{
+ "title": "Kısa başlık",
+ "dialogues": [
+   {"character":"Berk","text":"..."},
+   {"character":"Sevim","text":"..."}
+ ]
+}
